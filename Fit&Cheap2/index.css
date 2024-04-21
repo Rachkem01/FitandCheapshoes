@@ -1,0 +1,608 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+ 
+}
+body{
+    height: 100vh;
+    background-color: rgba(255,255,255,0.75);
+}
+
+:root{
+    --var-primary-color:black;
+    --var-secondary-color: rgb(157, 151, 151);
+}
+nav{
+   
+display: flex;
+margin-top: 50px;
+margin-left: 20px;
+}
+ .fc{
+    color: blue;
+    font-weight: bold;
+    font-size: 2rem;
+    display: inline;
+    margin-top: -10px;
+ }
+.shoe{
+    color: tomato;
+    font-weight: 600;
+    font-size: 1.2rem;
+    display: inline;
+}
+.fcline{
+    height:50px;
+    width: 2px;
+    background-color: rgba(0,0,0,0.3);
+    position:relative;
+    margin-left: 160px;
+    margin-top: -45px;
+
+}
+
+.ulmemu{
+display: flex;
+
+}
+
+.ulmemu li{
+    list-style: none;
+    margin-left: 70px;
+}
+.ulmemu li a{
+    text-decoration: none;
+}
+ #drop{
+    transform: rotate(90deg);
+    position: relative;
+    margin-top: 4px;
+    margin-left: 45px;
+}
+.accountline{
+    height:50px;
+    width: 2px;
+    background-color: rgba(0,0,0,0.3);  
+    margin-left: 100px;
+    margin-top: -65px;
+}
+.account{
+    display: flex;
+    list-style: none;
+    position: relative;
+    margin-left: 200px;
+}
+.account li{
+    margin-left: 20px;
+}
+.account li a{
+    text-decoration: none;
+}
+.fa fa-shopping-cart{
+    background-color: white;
+    
+    width: 150px;
+    height: 50px;
+    background-position: cover;
+}
+.cart{
+    background-color: black;
+    height: 50px;
+    width: 50px;
+    color: white;
+   text-align: center;
+   padding-top: 20px;
+   border-radius: 50%;
+   position: relative;
+   margin-left: 20px;
+   margin-top: -20px;
+}
+
+.menwrap{
+    position: absolute;
+    margin-left: 250px;
+    display: flex;
+    flex: 0.5;
+    padding: 20px;
+    background-color: white;
+    width: 300px;
+    height: 220px;
+    margin-top: -10px;
+    visibility: hidden;
+    
+    
+    
+   
+   
+  }
+  .menwrap li{
+      list-style: none;
+      line-height: 50px;
+      
+  }
+  .two{
+      margin-left: 40px;
+  }
+  
+  .womenwrap{
+      position: fixed;
+      margin-left: 80px;
+      display: flex;
+      flex: 0.5;
+      padding: 20px;
+     background-color: white;
+      width: 350px;
+      height: 370px;
+      margin-top: -10px;
+      visibility: hidden;
+      z-index: 1;
+  }
+  .womenwrap li{
+      list-style: none;
+      line-height: 50px;
+      
+  }
+  .womentwo{
+      margin-left: 40px;
+  }
+  .girlswrap{
+      position: fixed;
+      margin-left: 200px;
+      padding: 20px;
+      background-color:white;
+      width: 150px;
+      height: 250px;
+      margin-top: -10px;
+      text-indent: 0.5%;
+      visibility: hidden;
+  }
+  .boywrap{
+      position: fixed;
+      margin-left: 300px;
+      padding: 20px;
+      background-color:white;
+      width: 250px;
+      height: 150px;
+      margin-top: -10px;
+      visibility: hidden;
+      z-index: 1;
+  }
+  .morewrap{
+      position: fixed;
+      margin-left: 500px;
+      padding: 20px;
+      background-color:white;
+      width: 170px;
+      height: 270px;
+      margin-top: -10px;
+      visibility: hidden; 
+      z-index: 1; 
+  }
+  .accountwrap{
+      position: fixed;
+      margin-left: 650px;
+      padding: 20px;
+      background-color:white;
+      width: 200px;
+      height: 190px;
+      margin-top: -10px;
+      visibility: hidden;   
+  }
+  .accountwrap li{
+      line-height: 30px;
+  }
+  .ulmemu li:hover{
+      background-color: black;
+      width: 70px;
+      height: 30px;
+      border-radius: 20px;
+      color: #ffffff;
+      text-align: center;
+      padding: 5px;
+      cursor: pointer;
+      
+  }
+  
+  .menwrap.active{
+      visibility: visible;
+      
+  }
+  .womenwrap.active{
+      visibility: visible;
+  }
+  .girlswrap.active{
+      visibility: visible;
+  }
+  .boywrap.active{
+      visibility: visible;
+  }
+  .accountwrap.active{
+      visibility: visible;
+  }
+  .morewrap.active{
+      visibility: visible;
+  }
+.box{
+    visibility: visible;
+    background-color: gray;
+    height: 350px;
+    width: 1300px;
+    position:absolute;
+    margin-top: 20px;
+    
+    margin-left: -180px;
+    animation-name:changecolor;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    
+    margin-left: -300px;
+    z-index: -1;
+   
+
+}
+.tel{
+    position: absolute;
+  left: 101%;
+   writing-mode:vertical-rl;
+   top: 15%;
+}
+.fa-phone{
+    transform: rotate(90deg);
+    margin: 10px;
+    top: -20%;
+}
+
+.imagetext{
+    position: absolute;
+    visibility: visible;
+    display: flex;
+align-items: center;
+    justify-content: space-evenly;
+    top: 40%;
+    margin-left: -320px;
+    animation: fade 15s infinite;
+    
+    
+}
+
+
+
+.iimagetextline{
+    background-color: black;
+    height: 2px;
+    width: 300px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.textF{
+    margin-left: 300px;
+}
+.explore{
+    color:brown;
+    font-size: 1.2rem;
+}
+.work{
+    font-size: 2.3rem;
+    font-weight: bolder;
+  
+}
+.previous{
+    visibility: visible;
+position: absolute;
+background-color: black;
+width: 50px;
+height: 40px;
+border-radius: 50%;
+left: 3%;
+top: 55%;
+animation: pop infinite 2s linear;
+}
+.prev{
+    position: absolute;
+    visibility: visible;
+    top: 120%;
+    left:-65%;
+}
+.prev1{
+    position: absolute;
+    visibility: visible;
+    color:white;
+    font-weight: bold;
+   margin-left: 20px;
+   margin-top: 10px;
+
+
+}
+
+.next{
+    visibility: visible;
+position: absolute;
+background-color: black;
+width: 50px;
+height: 40px;
+border-radius: 50%;
+right: 13%;
+top: 55%;
+animation: pop infinite 2s linear;
+
+}
+.nex{
+    position: absolute;
+    visibility: visible;
+    top: 120%;
+right: -190%;
+
+ 
+}
+.next1{
+    position: absolute;
+    visibility: visible;
+    color:white;
+    font-weight: bold;
+    margin-left: -25px;
+margin-top: 10px;
+}
+
+@keyframes changecolor{
+    100%{
+        filter: opacity(0.5);
+        
+    }
+}
+
+
+@keyframes pop{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.3);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+@keyframes fade{
+     0%{
+        filter: opacity(1);
+    } 
+    50%{
+        filter: opacity(0);
+        
+    } 
+    100%{
+        filter: opacity(1);
+    
+}
+}
+
+
+@keyframes fade2{
+      0%{
+        filter: opacity(0);
+    } 
+    50%{
+        filter: opacity(1);
+    } 
+     100%{
+        filter: opacity(0);
+    } 
+}
+
+@keyframes circlefade{
+    100%{
+        filter: opacity(0.5);
+        transform: scale(1.2);
+    }
+}
+.secondimage{
+    visibility: visible;
+    position: absolute;
+    top: 30%;
+    display: flex;
+    margin-left: -120px;
+    animation: fade2 infinite 15s;
+
+}
+.work2{
+   margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 1.3rem;
+  
+}
+.iimagetextline2{
+    background-color: black;
+    height: 2px;
+    width: 300px;
+    margin-top: 10px;
+    margin-bottom: 10px;  
+}
+.explore2{
+    color:black;
+    font-size: 0.9rem;
+   width: 300px;
+}
+.textwhiteboot{
+    margin-left: 300px; 
+    width: 300px; 
+}
+.exploreall{
+    background-color: #ffffff;
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    margin-top: 70px;
+}
+.circle{
+    position: absolute;
+    visibility: visible;
+    bottom:30%;
+    left: 50%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  
+}
+.circle1{
+   background-color: black;
+   width: 15px;
+   height: 15px;
+  border-radius: 50%;
+  animation: circlefade 5s infinite ease;
+  
+}
+.circle2{
+    background-color: black;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    animation: circlefade 10s infinite ease;
+     
+ }
+.shoe-display{
+    visibility: visible;
+position: absolute;
+bottom: 10%;
+margin-left: 100px;
+}
+.shoe-display ul{
+display: flex;
+flex-direction: row;
+margin-top: 20px;
+
+list-style: none;
+}
+
+.saws{
+margin-left: 20px;
+}
+.saws:hover{
+    font-weight: bold;
+}
+.img_display{
+    visibility: visible;
+    position: absolute;
+    display: grid;
+    min-width: 80%;
+    min-height: 600px;
+    margin: 100px auto 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px 1fr));
+  grid-template-columns: auto auto auto auto;
+    grid-gap: 30px;
+margin-left: 50px;
+margin-right: 50px;
+    top: 75%;
+    /* background-color: rgb(192, 182, 182); */
+    cursor: pointer;
+
+ 
+    
+}
+
+.img_display img{
+    object-fit: cover;
+    width: 90%;
+    max-width: 600px;
+    min-height: 200px;
+    transition: 1s ease-out;
+    cursor: pointer;
+}
+.wrap-text p{
+    margin: 100px auto 50px;
+  position: relative;
+  bottom: -10%;
+  
+    
+    
+}
+.text1,
+.text2,
+.text3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 50px;
+   
+}
+.textes{
+   position: absolute;
+   top: 110%;
+   margin-left: 100px;
+   margin-bottom: 100px;
+    
+}
+.text1spacing{
+   padding-left: 230px; 
+}
+.text1{
+margin-top: 80px;
+}
+.text2{
+margin-top: 100px;
+margin-bottom: 120px;
+
+}
+
+.textspacing3{
+    left: -5%;
+}
+.textspacing4{
+    right:-5%;
+}
+.textspacing5{
+    left: -10%;
+}
+.textspacing6{
+    right: -5%;
+   
+}
+
+.img_display img:hover{
+    transform: scale(1.2);
+    filter: brightness(100%);
+}
+.wrap-text p:hover{
+    transform: scale(1.2);
+    color: black;
+    font-weight: bold;
+    
+}
+.officeaddress{
+ position: relative;
+ margin-top: 120%;
+}
+.officeC{
+   
+    
+    background-color: rgb(222, 215, 215);
+    display: flex;
+  
+}
+.officecontact{
+    display: flex;
+    flex-direction: column;
+ 
+   
+}
+.spanC{
+    display: inline;
+    margin-left: 30px;
+    margin-top: -15px;
+}
+.officecontact img{
+    display: inline;
+    position: relative;
+
+}
+.office{
+    margin-right: 50%;
+}
+.officeC h3{
+    margin-bottom: 20px;
+}
